@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct fourthQuestion: View {
+    @State private var emoji = ""
     var body: some View {
         
         NavigationStack {
@@ -15,38 +16,73 @@ struct fourthQuestion: View {
                 Color(.black)
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 VStack () {
+                    Text("🎞️")
+                        .font(.system(size: 90))
                     Text("Do you prefer a genre over other?")
                         .font(.title2)
                         .foregroundColor(.white)
                     
-                    Button("Rom-coms") {
+                    
+                    Button(action: {
+                        emoji = "👍"
                         romCom += 1
-                        
+                    }) {
+                        Text("Rom-coms")
+                            .font(.title3)
+                            .buttonStyle(.borderedProminent)
+                            .tint(.red)
                     }
+                    .padding(.bottom, 10)
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
                     .tint(.red)
                     
-                    Button("Action/suspense") {
+                    
+                    
+                    Button(action: {
+                        emoji = "👍"
                         actionSuspense += 1
+                    }) {
+                        Text("Action/Suspense")
+                            .font(.title3)
+                            .buttonStyle(.borderedProminent)
+                            .tint(.red)
                     }
+                    .padding(.bottom, 10)
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
                     .tint(.red)
                     
-                    Button("Horror") {
+                    Button(action: {
+                        emoji = "👍"
                         horror += 1
+                    }) {
+                        Text("Horror")
+                            .font(.title3)
+                            .buttonStyle(.borderedProminent)
+                            .tint(.red)
                     }
+                    .padding(.bottom, 10)
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
                     .tint(.red)
                     
-                    Button("Drama") {
+                    Button(action: {
+                        emoji = "👍"
                         drama += 1
+                    }) {
+                        Text("Drama")
+                            .font(.title3)
+                            .buttonStyle(.borderedProminent)
+                            .tint(.red)
                     }
+                    .padding(.bottom, 10)
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
                     .tint(.red)
+                    
+                    Text(emoji)
+                        .font(.largeTitle)
                     
                     NavigationLink(destination: fifthQuestion()) {
                         Text("Next Question")

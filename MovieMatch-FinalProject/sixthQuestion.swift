@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct sixthQuestion: View {
+    @State private var emoji = ""
     var body: some View {
         
         NavigationStack {
@@ -15,6 +16,8 @@ struct sixthQuestion: View {
                 Color(.black)
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 VStack () {
+                    Text("👀")
+                        .font(.system(size: 90))
                     Text("Do you like drama movies?")
                         .font(.title2)
                         .foregroundColor(.white)
@@ -22,6 +25,7 @@ struct sixthQuestion: View {
                     Button("Yes!") {
                         drama += 2
                         romCom += 2
+                        emoji = "👍"
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
@@ -30,11 +34,14 @@ struct sixthQuestion: View {
                     Button("Not really") {
                         actionSuspense += 2
                         horror += 2
+                        emoji = "👍"
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
                     .tint(.red)
-                    
+                   
+                    Text(emoji)
+                        .font(.largeTitle)
                     
                     NavigationLink(destination: results()) {
                         Text("See results!")
