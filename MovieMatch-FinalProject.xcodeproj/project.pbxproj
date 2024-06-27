@@ -18,6 +18,11 @@
 		4624CEF42C2C620F0042782C /* fifthQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4624CEF32C2C620F0042782C /* fifthQuestion.swift */; };
 		4624CEF62C2C683E0042782C /* results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4624CEF52C2C683E0042782C /* results.swift */; };
 		4624CEF82C2C86320042782C /* sixthQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4624CEF72C2C86320042782C /* sixthQuestion.swift */; };
+		4624CF1A2C2DEA8E0042782C /* howtoloseaguy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4624CF192C2DEA8E0042782C /* howtoloseaguy.swift */; };
+		4624CF1C2C2DEAC70042782C /* meetjoeblack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4624CF1B2C2DEAC70042782C /* meetjoeblack.swift */; };
+		4624CF1E2C2DEB2B0042782C /* theequalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4624CF1D2C2DEB2B0042782C /* theequalizer.swift */; };
+		4624CF202C2DEB580042782C /* theconjuring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4624CF1F2C2DEB580042782C /* theconjuring.swift */; };
+		4624CF222C2DF33E0042782C /* video1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4624CF212C2DF33E0042782C /* video1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +38,11 @@
 		4624CEF32C2C620F0042782C /* fifthQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fifthQuestion.swift; sourceTree = "<group>"; };
 		4624CEF52C2C683E0042782C /* results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = results.swift; sourceTree = "<group>"; };
 		4624CEF72C2C86320042782C /* sixthQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sixthQuestion.swift; sourceTree = "<group>"; };
+		4624CF192C2DEA8E0042782C /* howtoloseaguy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howtoloseaguy.swift; sourceTree = "<group>"; };
+		4624CF1B2C2DEAC70042782C /* meetjoeblack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meetjoeblack.swift; sourceTree = "<group>"; };
+		4624CF1D2C2DEB2B0042782C /* theequalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theequalizer.swift; sourceTree = "<group>"; };
+		4624CF1F2C2DEB580042782C /* theconjuring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theconjuring.swift; sourceTree = "<group>"; };
+		4624CF212C2DF33E0042782C /* video1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = video1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +84,13 @@
 				4624CEF32C2C620F0042782C /* fifthQuestion.swift */,
 				4624CEF72C2C86320042782C /* sixthQuestion.swift */,
 				4624CEF52C2C683E0042782C /* results.swift */,
+				4624CF192C2DEA8E0042782C /* howtoloseaguy.swift */,
+				4624CF1B2C2DEAC70042782C /* meetjoeblack.swift */,
+				4624CF1D2C2DEB2B0042782C /* theequalizer.swift */,
+				4624CF1F2C2DEB580042782C /* theconjuring.swift */,
 				4624CEE12C2B35880042782C /* Assets.xcassets */,
 				4624CEE32C2B35880042782C /* Preview Content */,
+				4624CF212C2DF33E0042782C /* video1.swift */,
 			);
 			path = "MovieMatch-FinalProject";
 			sourceTree = "<group>";
@@ -159,11 +174,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4624CEE02C2B35840042782C /* ContentView.swift in Sources */,
+				4624CF202C2DEB580042782C /* theconjuring.swift in Sources */,
 				4624CEEC2C2C56180042782C /* firstQuestion.swift in Sources */,
+				4624CF222C2DF33E0042782C /* video1.swift in Sources */,
 				4624CEF62C2C683E0042782C /* results.swift in Sources */,
 				4624CEF82C2C86320042782C /* sixthQuestion.swift in Sources */,
+				4624CF1C2C2DEAC70042782C /* meetjoeblack.swift in Sources */,
+				4624CF1A2C2DEA8E0042782C /* howtoloseaguy.swift in Sources */,
 				4624CEDE2C2B35840042782C /* MovieMatch_FinalProjectApp.swift in Sources */,
 				4624CEF22C2C61A80042782C /* fourthQuestion.swift in Sources */,
+				4624CF1E2C2DEB2B0042782C /* theequalizer.swift in Sources */,
 				4624CEF02C2C613C0042782C /* thirdQuestion.swift in Sources */,
 				4624CEEE2C2C60870042782C /* secondQuestion.swift in Sources */,
 				4624CEF42C2C620F0042782C /* fifthQuestion.swift in Sources */,
