@@ -18,43 +18,48 @@ struct firstQuestion: View {
         
         
         NavigationStack {
-            VStack () {
-                Text("")
-                Text("How do you feel about romance?")
-                    .font(.title2)
+            ZStack () {
+                Color(.black)
+                    .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
+                VStack () {
                     
-                Button("I hate it, don't make me watch it") {
-                    actionSuspense += 1
-                    horror += 1
-                    drama += 1
-                }
-                .font(.title3)
-                .buttonStyle(.borderedProminent)
-                .tint(.red)
+                    Text("How do you feel about romance?")
+                        .font(.title2)
+                        .foregroundColor(.white)
                     
-                
-                Button("I love it!") {
-                    romCom += 1
+                    Button("I hate it, don't make me watch it") {
+                        actionSuspense += 2
+                        horror += 2
+                        drama += 1
+                    }
+                    .font(.title3)
+                    .buttonStyle(.borderedProminent)
+                    .tint(.red)
+                    
+                    
+                    Button("I love it!") {
+                        romCom += 2
+                    }
+                    .font(.title3)
+                    .buttonStyle(.borderedProminent)
+                    .tint(.red)
+                    
+                    
+                    Button("It doesn't matter") {
+                        romCom += 1
+                        actionSuspense += 1
+                        horror += 1
+                        drama += 1
+                    }
+                    .font(.title3)
+                    .buttonStyle(.borderedProminent)
+                    .tint(.red)
+                    
+                    NavigationLink(destination: secondQuestion()) {
+                        Text("Next question")
+                    }
                 }
-                .font(.title3)
-                .buttonStyle(.borderedProminent)
-                .tint(.red)
-                   
-                
-                Button("It doesn't matter") {
-                    romCom += 1
-                    actionSuspense += 1
-                    horror += 1
-                    drama += 1
-                }
-                .font(.title3)
-                .buttonStyle(.borderedProminent)
-                .tint(.red)
-                   
-                NavigationLink(destination: secondQuestion()) {
-                    Text("Next question")
-                }
-                
             }
         }
     }

@@ -146,7 +146,7 @@ struct results: View {
                 
                 HStack(spacing: 80){
                     VStack{
-                        Image("Horrormovie2")
+                        Image("horrormovie2")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
                         

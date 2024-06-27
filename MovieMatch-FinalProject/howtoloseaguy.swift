@@ -27,6 +27,8 @@ struct howtoloseaguy: View {
             Text("A ladies man bet his friends that he can get a woman to fall in love with him in 10 days, but unbeknownst to him, the woman he's dating is actually a magazine columnist working on a new column called 'How to Lose a Guy in 10 Days', and she's doing everything she could to drive the guy she's dating crazy.")
                 .multilineTextAlignment(.center)
             
+                .padding(15)
+            
             video1 (videoID: "2ZMGk_Ml1fc")
                 .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.3)
                 .cornerRadius(15)
