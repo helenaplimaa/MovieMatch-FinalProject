@@ -16,12 +16,16 @@ struct sixthQuestion: View {
                     .font(.title2)
                 
                 Button("Yes!") {
+                    drama += 1
+                    romCom += 1
                 }
                 .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.red)
                 
                 Button("Not really") {
+                    actionSuspense += 1
+                    horror += 1
                 }
                 .font(.title3)
                 .buttonStyle(.borderedProminent)

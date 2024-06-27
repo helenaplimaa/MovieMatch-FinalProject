@@ -16,23 +16,33 @@ struct fourthQuestion: View {
                     .font(.title2)
                 
                 Button("Rom-coms") {
+                    romCom += 1
+                   
                 }
                 .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.red)
                 
                 Button("Action/suspense") {
+                    actionSuspense += 1
                 }
                 .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.red)
                 
                 Button("Horror") {
+                    horror += 1
                 }
                 .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.red)
 
+                Button("Drama") {
+                    drama += 1
+                }
+                .font(.title3)
+                .buttonStyle(.borderedProminent)
+                .tint(.red)
                 
                 NavigationLink(destination: fifthQuestion()) {
                     Text("Next Question")
