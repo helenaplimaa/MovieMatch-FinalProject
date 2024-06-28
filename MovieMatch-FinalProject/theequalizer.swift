@@ -10,35 +10,40 @@ import SwiftUI
 struct theequalizer: View {
     var body: some View {
     
-        
-        VStack{
+        ZStack () {
+            Color(.black)
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
-            Image("theequalizer")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fit)
-                .cornerRadius(15)
-            
-            Text("The Equalizer")
-                .font(.title)
-                .fontWeight(.bold)
-                .multilineTextAlignment(.center)
-            
-                .padding(10)
-            
-            Text("Robert McCall is a former special service commando who faked his own death in hopes of living out a quiet life. Instead, he comes out of his self-imposed retirement to save a young girl, and finds his desire for justice reawakened after coming face-to-face with members of a brutal Russian gang.")
-                .multilineTextAlignment(.center)
-            
-                .padding(15)
+            VStack{
                 
-            
-            video1 (videoID: "VjctHUEmutw")
-                .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.3)
-                .cornerRadius(15)
-                .padding(.horizontal, 24)
+                Image("theequalizer")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(15)
+                
+                Text("The Equalizer")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
+                
+                    .padding(10)
+                
+                Text("Robert McCall is a former special service commando who faked his own death in hopes of living out a quiet life. Instead, he comes out of his self-imposed retirement to save a young girl, and finds his desire for justice reawakened after coming face-to-face with members of a brutal Russian gang.")
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
+                
+                    .padding(15)
+                
+                
+                video1 (videoID: "VjctHUEmutw")
+                    .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.3)
+                    .cornerRadius(15)
+                    .padding(.horizontal, 24)
+                
+            }
             
         }
-
-        
         
         
     }

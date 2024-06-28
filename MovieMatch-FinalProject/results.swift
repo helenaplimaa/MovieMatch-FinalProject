@@ -22,6 +22,7 @@ struct results: View {
                     .foregroundColor(.red)
                     .padding()
                 
+                
                 HStack(spacing: 80){
                     VStack{
                         Image("meetjb")
